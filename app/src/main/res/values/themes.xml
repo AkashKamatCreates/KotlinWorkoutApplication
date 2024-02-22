@@ -1,0 +1,23 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.WorkoutApplication" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--        <item name="statusBarForeground">@color/white</item>-->
+<!--        <item name="android:windowLightStatusBar">@color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="Theme.WorkoutApplication" parent="Base.Theme.WorkoutApplication" />-->
+<!--</resources>-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WorkoutApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- Make system icons light (white) -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item> <!-- Necessary for transparent status bar -->
+    </style>
+
+    <style name="Theme.WorkoutApplication" parent="Base.Theme.WorkoutApplication" />
+</resources>
