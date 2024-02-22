@@ -14,8 +14,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         enableEdgeToEdge() // Moved after super.onCreate(savedInstanceState)
 
+=======
+        enableEdgeToEdge()
+>>>>>>> ada8eed (dynamic component size)
         setContentView(R.layout.activity_main)
 
         recyclerView = findViewById(R.id.recyclerView)
@@ -32,12 +36,24 @@ class MainActivity : AppCompatActivity() {
     private fun createWorkoutList(): List<Workout> {
         val workoutList = mutableListOf<Workout>()
 
+<<<<<<< HEAD
         workoutList.add(Workout("Abs Crunches", 5))
         workoutList.add(Workout("Flat Bench Press", 5))
         workoutList.add(Workout("Inclined Bench Press", 5))
         workoutList.add(Workout("Declined Bench Press", 5))
         workoutList.add(Workout("Pectoral Fly", 5))
         workoutList.add(Workout("Tricep Pushdown", 5))
+=======
+        workoutList.add(Workout("Squats", 2))
+        workoutList.add(Workout("Abduction", 4))
+        workoutList.add(Workout("Adduction", 4))
+        workoutList.add(Workout("Leg Extension (Quads)", 5))
+        workoutList.add(Workout("Leg Curl (HamStrings)", 5))
+        workoutList.add(Workout("Calf Raises", 3))
+        workoutList.add(Workout("Shoulder Lateral Raise", 3))
+        workoutList.add(Workout("Shrugs", 3))
+
+>>>>>>> ada8eed (dynamic component size)
 
         return workoutList
     }
