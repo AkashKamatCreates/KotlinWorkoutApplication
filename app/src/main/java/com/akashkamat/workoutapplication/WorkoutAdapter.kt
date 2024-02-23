@@ -6,29 +6,18 @@ import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-<<<<<<< HEAD
-=======
+
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 
->>>>>>> ada8eed (dynamic component size)
+
 
 class WorkoutAdapter(private val workoutList: List<Workout>) :
     RecyclerView.Adapter<WorkoutAdapter.WorkoutViewHolder>() {
 
     inner class WorkoutViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val exerciseName: TextView = itemView.findViewById(R.id.exerciseName)
-<<<<<<< HEAD
-        val checkBoxes: List<CheckBox> = listOf(
-            itemView.findViewById(R.id.checkBox1),
-            itemView.findViewById(R.id.checkBox2),
-            itemView.findViewById(R.id.checkBox3),
-            itemView.findViewById(R.id.checkBox4),
-            itemView.findViewById(R.id.checkBox5)
-        )
-=======
         val checkBoxContainer: LinearLayout = itemView.findViewById(R.id.checkBoxContainer)
->>>>>>> ada8eed (dynamic component size)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WorkoutViewHolder {
@@ -41,10 +30,6 @@ class WorkoutAdapter(private val workoutList: List<Workout>) :
         val currentWorkout = workoutList[position]
         holder.exerciseName.text = currentWorkout.name
 
-<<<<<<< HEAD
-        for (i in 0 until currentWorkout.totalSets) {
-            holder.checkBoxes[i].text = "Set ${i + 1}"
-=======
         // Clear previous checkboxes if any
         holder.checkBoxContainer.removeAllViews()
 
@@ -55,7 +40,6 @@ class WorkoutAdapter(private val workoutList: List<Workout>) :
             checkBox.textSize = 20f
             checkBox.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.white))
             holder.checkBoxContainer.addView(checkBox)
->>>>>>> ada8eed (dynamic component size)
         }
     }
 
