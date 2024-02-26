@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bb"
+    android:background="@drawable/homebackground"
     android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/exerciseName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Friday:"
         android:textAlignment="center"
         android:textSize="45sp"
         android:textStyle="bold"
